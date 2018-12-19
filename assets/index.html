@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="meta width=device-width initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <title>acrostia</title>
+</head>
+<body>
+<header class="header">
+    <a href="#" class="logo">
+        <img src="img/header/header__logo.png" alt="logo">
+    </a>
+    <nav class="menu">
+        <div class="menu__icon">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="menu__links">
+            <li class="links-block"><a class="menu__links-item_home menu__links-item" href="index.html">Home</a></li>
+            <li class="links-block"><a class="menu__links-item_service menu__links-item" href="services.html">Services</a></li>
+            <li class="links-block"><a class="menu__links-item_about menu__links-item" href="about.html">About</a></li>
+            <li class="links-block"><a class="menu__links-item_work menu__links-item" href="work.html">Work</a></li>
+            <li class="links-block"><a class="menu__links-item_contact menu__links-item" href="contact.html">Contacts</a></li>
+        </ul>
+    </nav>
+</header>
+<section class="homepage">
+    <div class="wrap wrap-homepage">
+        <div class="carousel-container">
+            <div class="mySlides fade">
+                <div class="title-element">
+                    <h2 class="homepage_section-title section-title">good ideas</h2>
+                    <span class="homepage_section-title section-title small_text">comes</span>
+                </div>
+                <h1 class="main-title">first!</h1>
+            </div>
+            <div class="mySlides fade">
+                <div class="title-element">
+                    <h2 class="homepage_section-title section-title">good ideas</h2>
+                    <span class="homepage_section-title section-title small_text">comes</span>
+                </div>
+                <h1 class="main-title">first!</h1>
+            </div>
+            <div class="mySlides fade">
+                <div class="title-element">
+                    <h2 class="homepage_section-title section-title">good ideas</h2>
+                    <span class="homepage_section-title section-title small_text">comes</span>
+                </div>
+                <h1 class="main-title">first!</h1>
+            </div>
+            <div class="carousel_slide-id">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+
+    </div>
+</section>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/carousel.js"></script>
+<script src="js/nav.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+body {
+  font-family: "Lato", sans-serif;
+}
+a{
+  text-decoration: none;
+}
+input, textarea{
+  outline: 0;
+}
+.section-title {
+  margin-bottom: 30px;
+  color: #fff;
+  font-size: 60px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.wrap {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+.title-block {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.desc {
+  line-height: 20px;
+  color: #fff;
+  font-size: 14px;
+}
+.social-list{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.social-links{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #fff;
+}
+@media only screen and(max-width: 320px){
+  .header{
+    flex-flow: column nowrap;
+  }
+}

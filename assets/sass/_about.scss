@@ -1,0 +1,135 @@
+.about-section{
+  padding: 200px 0 100px;
+  background-color: #665464;
+  background-image: url("../img/about/about__background__image.png");
+  text-align: center;
+}
+  .menu__links-item_about{
+    background-color: #91778e;
+  }
+
+.about_title-block{
+  margin: 60px 0 50px;
+  padding: 15px 40px;
+  display: inline-block;
+  background-color: #a1ca6c;
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: relative;
+  &::after {
+    border: medium solid transparent;
+    content: "";
+    top: 100%;
+    left: 50%;
+    position: absolute;
+    height: 0;
+    width: 0;
+    border-color: #a1ca6c rgba(161, 202, 108, 0) rgba(161, 202, 108, 0);
+    border-width: 25px;
+    margin-left: -25px;
+  }
+}
+.about-list{
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+}
+.about_items {
+  margin-top: 20px;
+  flex-basis: 22%;
+  padding: 50px 30px 20px;
+  background-color: rgba(77, 63, 75, 0.5);
+  box-sizing: border-box;
+  &:hover {
+    transition: 0.3s;
+    background-color: rgba(77, 63, 75, 0.8);
+    .facebook-hover{
+      transition: 0.3s;
+      background-color: #4f689e;
+    }
+    .twitter-hover{
+      transition: 0.3s;
+      background-color: #74c7d5;
+    }
+    .google-hover{
+      transition: 0.3s;
+      background-color: #df5c64;
+    }
+    .in-hover{
+      transition: 0.3s;
+      background-color: #3e61af;
+    }
+    .about_items {
+      &_img-wrapper {
+        transition: 0.3s;
+        border: 5px solid #df5c64;
+      }
+      &_img-wrapper{
+        transition: 0.3s;
+        color: #ff8973;
+      }
+      &_title-block{
+        transition: 0.3s;
+        color: #fff;
+      }
+      &_title-block_desc{
+        color: #ff8973;
+      }
+
+    }
+  }
+}
+.about_items_img-wrapper{
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
+  border: 5px solid #a1859e;
+  border-radius: 50%;
+  box-sizing: border-box;
+
+}
+.about_items_img{
+  width: 100%;
+  height: 100%;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+.about_items_title-block{
+  margin: 30px 0 15px;
+  color: #c7b6c5;
+  font-size: 25px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+}
+.about_items_title-block_desc{
+  margin-bottom: 30px;
+  color: #a1ca6c;
+}
+.about_social-list{
+  flex-flow: row nowrap;
+}
+.about_social-links{
+  width: 30px;
+  height: 30px;
+  background-color: #a1859e;
+}
+.about_social-items{
+margin: 10px 10px;
+}
+@media only screen and(max-width: 320px){
+  .about_items{
+    padding: 20px 0;
+  }
+  .about_social-list{
+    flex-flow: row wrap;
+  }
+  .about-section{
+    .section-title{
+      font-size: 50px;
+    }
+  }
+}

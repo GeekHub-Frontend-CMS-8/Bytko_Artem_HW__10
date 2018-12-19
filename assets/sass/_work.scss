@@ -1,0 +1,135 @@
+.work-section {
+  padding: 200px 0 100px;
+  background-color: #81a256;
+  text-align: center;
+}
+  .menu__links-item_work{
+    background-color: #a1ca6c;
+  }
+
+.menu__links-item:hover{
+  background-color: #a1ca6c;
+}
+.portfolio_nav {
+  margin: 50px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+  border-top: 1px solid #94b963;
+  border-bottom: 1px solid #94b963;
+  &-items {
+    display: inline-block;
+    padding: 10px;
+  }
+}
+.portfolio-links {
+  padding: 10px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+
+  &:hover {
+    background-color: #f5c149;
+    border-radius: 3px;
+  }
+}
+.portfolio-list{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.example{
+  margin-top: 20px;
+  flex-basis: 24%;
+  &:hover{
+    .portfolio_hover{
+      opacity: 1;
+    }
+  }
+}
+.portfolio_img-wraper{
+  position: relative;
+  display: flex;
+}
+.portfolio_hover{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+}
+.portfolio_img_links{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 60px;
+  font-weight: 100;
+  text-transform: uppercase;
+  border-radius: 50%;
+  border: 1px solid #fff;
+}
+
+.portfolio_img{
+  width: 100%;
+  box-sizing: border-box;
+}
+.desc-block_desc{
+  padding: 20px 0;
+  display: block;
+  color: #727272;
+  font-size: 14px;
+  text-transform: uppercase;
+  background-color: #eee;
+  position: relative;
+  &::before {
+    border: medium solid transparent;
+    content: "";
+    bottom: 100%;
+    left: 50%;
+    position: absolute;
+    height: 0;
+    width: 0;
+    border-color: rgba(238, 238, 238, 0) rgba(238, 238, 238, 0) #eee;
+    border-width: 20px;
+    margin-left: -20px;
+    margin-bottom: 1px;
+  }
+}
+@media only screen and(max-width: 850px){
+  .example{
+    flex-basis: 31%;
+  }
+}
+@media only screen and(max-width: 700px){
+  .portfolio_nav{
+    flex-flow: column nowrap;
+    &_title-block{
+      margin-bottom: 30px;
+    }
+  }
+  .example{
+    flex-basis: 48%;
+  }
+}
+@media only screen and(max-width: 500px){
+  .portfolio_nav-list{
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  .example{
+    flex-basis: 100%;
+  }
+}
+@media only screen and(max-width: 300px) {
+  .section-title {
+    font-size: 30px;
+  }
+}
