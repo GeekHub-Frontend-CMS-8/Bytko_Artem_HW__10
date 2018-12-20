@@ -178,10 +178,6 @@ input, textarea {
 .menu__links-item_home {
   background-color: #74c7d5; }
 
-.menu__links-item:hover {
-  background-color: #74c7d5;
-  border-radius: 3px; }
-
 .wrap-homepage {
   max-width: 3000px;
   padding: 0 50px; }
